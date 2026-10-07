@@ -7,368 +7,193 @@
 
   <title>My Bestie ❤️</title>
 
-  <!-- Connect CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="intro" id="intro">
+  <div class="floating-hearts">
+    <span>❤️</span><span>💗</span><span>💕</span>
+    <span>❤️</span><span>💗</span><span>💕</span>
+  </div>
 
+  <section class="intro" id="intro">
     <div class="intro-content">
-
-      <p class="small-text">
-        A little something for someone special...
-      </p>
-
+      <p class="small-text">A little something for someone special...</p>
       <h1>Hey You... 👀</h1>
-
-      <p>
+      <p class="intro-message">
         You probably expected a birthday text from me.
         Unfortunately, I chose violence. 😂
       </p>
-
-      <button onclick="openSurprise()">
-        Open Your Surprise 💌
-      </button>
-
+      <button class="main-button" id="openButton">Open Your Surprise 💌</button>
     </div>
+  </section>
 
-  </div>
-
-
-  <main id="mainContent">
-
-
-    <!-- HERO -->
+  <main id="mainContent" class="hidden">
 
     <section class="hero">
-
-      <p class="eyebrow">
-        TODAY IS YOUR DAY ✨
-      </p>
-
-      <h2>
-        Happy Birthday,<br>
-        <span>My Bestie!</span>
-      </h2>
-
-      <p>
-        To my favourite human headache, my gist partner
-        and my unpaid therapist. 😂❤️
-      </p>
-
+      <div class="hero-content">
+        <p class="eyebrow">TODAY IS YOUR DAY ✨</p>
+        <h2>Happy Birthday,<br><span>My Bestie!</span></h2>
+        <p>
+          To my favourite human headache, my gist partner
+          and my unpaid therapist. 😂❤️
+        </p>
+        <button class="scroll-button" onclick="scrollToSection('photo')">Keep going ↓</button>
+      </div>
     </section>
 
-
-    <!-- PHOTO -->
-
-    <section class="photo-section">
-
+    <section class="photo-section" id="photo">
       <div class="photo-card">
+        <div class="photo-frame">
+          <img src="https://i.ibb.co/svyHYsYx/AAAMN-3.jpg" alt="My beautiful bestie">
+        </div>
+        <div class="photo-caption">
+          <p>✨ Main character energy ✨</p>
+          <span>Looking innocent like she doesn't stress me. 😂</span>
+        </div>
+      </div>
+    </section>
 
-        <img
-          src="https://i.ibb.co/svyHYsYx/AAAMN-3.jpg"
-          alt="My beautiful bestie"
-        >
-
-        <h3>
-          ✨ Main character energy ✨
-        </h3>
-
-        <p>
-          Looking innocent like she doesn't stress me. 😂
-        </p>
-
+    <section class="letter-section">
+      <div class="section-heading">
+        <p class="eyebrow">FROM ME TO YOU ❤️</p>
+        <h2>A little letter...</h2>
       </div>
 
-    </section>
-
-
-    <!-- LETTER -->
-
-    <section class="letter">
-
-      <p class="eyebrow">
-        FROM ME TO YOU ❤️
-      </p>
-
-      <h2>
-        A little letter...
-      </h2>
-
-      <p>
-        Happy Birthday to the woman who somehow became
-        family without signing any official documents. 😂❤️
-      </p>
-
-      <p>
-        You're my gist partner, my unpaid therapist,
-        my emergency consultant, my prayer warrior,
-        and one of the few people I know will actually
-        show up when things get real.
-      </p>
-
-      <p>
-        We may not talk every single day, but somehow,
-        whenever I need you, <strong>you're there.</strong>
-        And honestly, that kind of friendship is rare.
-      </p>
-
-      <p>
-        Thank you for always showing up for me and my family,
-        for listening to my endless gist, and for being
-        one of my safe people.
-      </p>
-
-      <p class="funny">
-        I genuinely pray this new year brings you happiness,
-        peace and plenty money because...
-        <strong>
+      <div class="letter">
+        <p>
+          Happy Birthday to the woman who somehow became
+          family without signing any official documents. 😂❤️
+        </p>
+        <p>
+          You're my gist partner, my unpaid therapist,
+          my emergency consultant, my prayer warrior,
+          and one of the few people I know will actually
+          show up when things get real.
+        </p>
+        <p>
+          We may not talk every single day, but somehow,
+          whenever I need you, <strong>you're there.</strong>
+          And honestly, that kind of friendship is rare.
+        </p>
+        <p>
+          Thank you for always showing up for me and my family,
+          for listening to my endless gist, and for being
+          one of my safe people.
+        </p>
+        <p class="funny-line">
+          I genuinely pray this new year brings you happiness,
+          peace and plenty money because...
           I refuse to have a best friend that is
           financially struggling. 😭😂
-        </strong>
-      </p>
-
-      <p>
-        May God bless you ridiculously, because apparently
-        normal blessings are not enough for my person.
-      </p>
-
-      <p class="love">
-        I love you, idiot. ❤️
-      </p>
-
+        </p>
+        <p>
+          May God bless you ridiculously, because apparently
+          normal blessings are not enough for my person.
+        </p>
+        <p class="love-line">I love you, idiot. ❤️</p>
+      </div>
     </section>
 
-
-    <!-- REASONS -->
-
-    <section class="reasons">
-
-      <p class="eyebrow">
-        JUST SO YOU KNOW...
-      </p>
-
-      <h2>
-        Why you're stuck with me 😂
-      </h2>
+    <section class="reasons-section">
+      <div class="section-heading">
+        <p class="eyebrow">JUST SO YOU KNOW...</p>
+        <h2>Why you're stuck with me 😂</h2>
+      </div>
 
       <div class="cards">
-
-        <div class="card">
-
-          ❤️
-
-          <h3>
-            You Show Up
-          </h3>
-
-          <p>
-            When things actually matter, you're there.
-            And that means more than you know.
-          </p>
-
+        <div class="reason-card">
+          <div class="card-icon">❤️</div>
+          <h3>You Show Up</h3>
+          <p>When things actually matter, you're there. And that means more than you know.</p>
         </div>
 
-
-        <div class="card">
-
-          😂
-
-          <h3>
-            You're My Gist Partner
-          </h3>
-
-          <p>
-            Because apparently my life cannot happen
-            peacefully without me telling you everything.
-          </p>
-
+        <div class="reason-card">
+          <div class="card-icon">😂</div>
+          <h3>You're My Gist Partner</h3>
+          <p>Because apparently my life cannot happen peacefully without me telling you everything.</p>
         </div>
 
-
-        <div class="card">
-
-          🫶🏽
-
-          <h3>
-            You're Family
-          </h3>
-
-          <p>
-            Somewhere along the way, "best friend"
-            stopped being enough.
-          </p>
-
+        <div class="reason-card">
+          <div class="card-icon">🫶🏽</div>
+          <h3>You're Family</h3>
+          <p>Somewhere along the way, "best friend" stopped being enough.</p>
         </div>
 
-
-        <div class="card">
-
-          🙏🏽
-
-          <h3>
-            Your Heart
-          </h3>
-
-          <p>
-            You're genuinely caring, and I hope
-            you never lose that part of yourself.
-          </p>
-
+        <div class="reason-card">
+          <div class="card-icon">🙏🏽</div>
+          <h3>Your Heart</h3>
+          <p>You're genuinely caring, and I hope you never lose that part of yourself.</p>
         </div>
-
       </div>
-
     </section>
 
+    <section class="diaper-section">
 
-    <!-- DIAPER JOKE -->
-
-    <section class="diaper">
-
-      <div id="diaperIntro">
-
-        <div class="warning">
-          🚨
-        </div>
-
-        <p class="eyebrow">
-          OFFICIAL NOTICE
-        </p>
-
-        <h2>
-          We need to discuss something...
-        </h2>
-
-        <p>
-          You probably thought I forgot. 👀
-        </p>
-
-        <button onclick="revealDiaper()">
-          Reveal The Evidence 👶🏽
-        </button>
-
+      <div class="warning-box">
+        <div class="warning-icon">🚨</div>
+        <p class="eyebrow">OFFICIAL NOTICE</p>
+        <h2>We need to discuss something...</h2>
+        <p>You probably thought I forgot. 👀</p>
+        <button class="main-button" id="diaperButton">Reveal The Evidence 👶🏽</button>
       </div>
 
-
-      <div id="diaperReveal">
-
-        <div class="baby">
-          👶🏽🍼
-        </div>
-
-        <h2>
-          THE CUSTOM DIAPER CONTRACT™
-        </h2>
-
-        <p>
-          Dear Bestie,
-        </p>
-
+      <div class="diaper-reveal" id="diaperReveal">
+        <div class="diaper-icon">👶🏽🍼</div>
+        <h2>THE CUSTOM DIAPER CONTRACT™</h2>
+        <p>Dear Bestie,</p>
         <p>
           This serves as official documentation that
           your future children will be receiving
-          <strong>
-            JASÚKA-CERTIFIED CUSTOMIZED DIAPERS™.
-          </strong>
+          <strong>JASÚKA-CERTIFIED CUSTOMIZED DIAPERS™.</strong>
         </p>
-
 
         <div class="terms">
-
-          <p>
-            ❌ You did not request this.
-          </p>
-
-          <p>
-            ❌ You cannot reject this.
-          </p>
-
-          <p>
-            😂 I will be involved.
-          </p>
-
-          <p>
-            👶🏽 Your babies will know their aunty.
-          </p>
-
-          <p>
-            👑 The diapers will be unnecessarily fine.
-          </p>
-
+          <div>❌ You did not request this.</div>
+          <div>❌ You cannot reject this.</div>
+          <div>😂 I will be involved.</div>
+          <div>👶🏽 Your babies will know their aunty.</div>
+          <div>👑 The diapers will be unnecessarily fine.</div>
         </div>
 
-
-        <p>
+        <p class="signed">
           Signed with love,<br>
-          <strong>
-            Your Favourite Problem™ ❤️
-          </strong>
+          <strong>Your Favourite Problem™ ❤️</strong>
         </p>
 
-        <button onclick="acceptFate()">
-          I Accept My Fate 😂
-        </button>
-
+        <button class="accept-button" id="acceptButton">I Accept My Fate 😂</button>
       </div>
 
     </section>
 
-
-    <!-- FINAL MESSAGE -->
-
-    <section class="final">
-
-      <div class="heart">
-        ❤️
+    <section class="final-section">
+      <div class="final-content">
+        <div class="final-heart">❤️</div>
+        <p class="eyebrow">ONE LAST THING</p>
+        <h2>Thank you for being my person.</h2>
+        <p>
+          Here's to more laughter, more gist, more memories,
+          more crazy moments, and many more birthdays together.
+        </p>
+        <p class="big-love">I love you forever, bestie. 🥹❤️</p>
+        <p class="signature">— Jasúka</p>
       </div>
-
-      <p class="eyebrow">
-        ONE LAST THING
-      </p>
-
-      <h2>
-        Thank you for being my person.
-      </h2>
-
-      <p>
-        Here's to more laughter, more gist, more memories,
-        more crazy moments, and many more birthdays together.
-      </p>
-
-      <h3>
-        I love you forever, bestie. 🥹❤️
-      </h3>
-
-      <p class="signature">
-        — Jasúka
-      </p>
-
     </section>
-
 
     <footer>
-
-      Made with ❤️, chaos & questionable decisions 😂
-
+      Made with ❤️, chaos &amp; questionable decisions 😂
       <br>
-
       © 2026 Jasúka
-
     </footer>
-
 
   </main>
 
+  <div id="confetti-container"></div>
 
-  <div id="confetti"></div>
-
-
-  <!-- Connect JavaScript -->
   <script src="script.js"></script>
 
 </body>
 
-  </html>
+</html>
